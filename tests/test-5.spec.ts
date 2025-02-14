@@ -21,14 +21,14 @@ test('handle new window and form', async () => {
     await newPage.waitForLoadState();
 
    
-    await newPage.fill('input[name="fname"]', 'John');
-    await newPage.fill('input[name="lname"]', 'Doe');
+    await newPage.fill('input[name="fname"]', 'Naveen');
+    await newPage.fill('input[name="lname"]', 'Meena');
 
     await newPage.press('input[name="lname"]', 'Enter');
 
     console.log('Form automation successful!');
 
-    await newPage.waitForTimeout(5000);
+    await newPage.waitForTimeout(1000);
 
     await browser.close();
 });
